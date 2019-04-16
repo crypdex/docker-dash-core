@@ -20,6 +20,6 @@ done
 rm -rf ~/.docker/manifests/*
 
 # version
-docker manifest create ${ORG}/${SERVICE}:${VERSION} cry${ORG}dex/${SERVICE}:${VERSION}-x86_64 ${ORG}/${SERVICE}:${VERSION}-arm64v8
+docker manifest create ${ORG}/${SERVICE}:${VERSION} ${ORG}/${SERVICE}:${VERSION}-x86_64 ${ORG}/${SERVICE}:${VERSION}-arm64v8
 docker manifest push ${ORG}/${SERVICE}:${VERSION}
 
